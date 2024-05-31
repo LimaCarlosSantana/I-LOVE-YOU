@@ -1,0 +1,79 @@
+.Div1, .Div2, .Div3, .Div4, .Div5 {
+    display: none;
+    width: 300px; /* Defina uma largura padrão para todas as divs */
+    height: 300px; /* Defina uma altura padrão para todas as divs */
+    position: relative; /* Necessário para posicionamento interno */
+    margin: 10px; /* Espaçamento entre as divs */
+   
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Torna as posições relativas ao corpo */
+    flex-wrap: wrap; /* Permite que as divs se alinhem em múltiplas linhas, se necessário */
+}
+
+.Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
+    width: 100%; /* Faz com que as imagens preencham a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para a centralização */
+}
+
+select {
+    width: 150px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    position: fixed;
+    background-image: url('imagens/seta-para-baixo-para-navegar.png'); /* Substitua 'seta-para-baixo.png' pelo caminho da sua imagem de seta */
+    background-repeat: no-repeat;
+    background-position-y: center; /* Posiciona a seta verticalmente no centro */
+    padding-right: 25px; /* Adiciona espaço para a seta */
+    background-size: 15px; /* Define o tamanho da seta */
+    background-position-x: calc(100% - 25px); /* Posiciona a seta a 25px da margem direita */
+}
+
+/* Media query para dispositivos móveis (largura máxima de 600px) */
+@media (max-width: 600px) {
+    select {
+        top: 500px; 
+        left: 75px;
+        position: fixed; 
+       
+    }
+}
+
+/* Media query para telas maiores (largura mínima de 1024px) */
+@media (min-width: 768px) {
+    select {
+        width: 200px;
+        top: 600px;
+        position: fixed; 
+        left: 670px;
+    }
+}
+
+/* Media query para telas maiores (largura mínima de 1024px) */
+@media (min-width: 1024px) {
+    select {
+        width: 200px;
+        top: 600px;
+        position: fixed; 
+        left: 670px;
+    }
+}
