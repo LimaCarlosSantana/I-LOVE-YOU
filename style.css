@@ -41,8 +41,8 @@ select {
     -webkit-appearance: none;
     background-image: url('imagens/seta-para-baixo-para-navegar.png');
     background-repeat: no-repeat;
-    background-position: center right 10px;
-    background-size: 15px;
+    background-position: center right 40px;
+    background-size: 30px;
     position: fixed;
     bottom: 20px;
     left: 50%;
@@ -53,10 +53,10 @@ select {
 @media (max-width: 720px) {
     
     select{
-        width: 1200px;
-        height: 320px;
+        width: 12400px;
+        height: 640px;
         padding: 40px;
-        font-size: 128px;
+        font-size: 256px;
     }
 
     .Div1, .Div2, .Div3, .Div4, .Div5 {
