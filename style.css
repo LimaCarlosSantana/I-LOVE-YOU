@@ -32,7 +32,7 @@ body {
 
 select {
     
-    
+    margin: 10px 10px;
     color: black;
     background-color: white;
     border: none;
@@ -43,8 +43,8 @@ select {
     background-repeat: no-repeat;
     background-position: center right 40px;
     background-size: 30px;
-    position: fixed;
-    bottom: 20px;
+    position: relative;
+    top: 800px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -53,10 +53,10 @@ select {
 @media (max-width: 720px) {
     
     select{
-        width: 12400px;
-        height: 640px;
-        padding: 40px;
-        font-size: 256px;
+        width: 500px;
+        height: 100px;
+        padding: 10px;
+        font-size: 64px;
     }
 
     .Div1, .Div2, .Div3, .Div4, .Div5 {
@@ -73,10 +73,10 @@ select {
 @media (min-width: 768px) {
     
     select{
-        width: 300px;
-        height: 80px;
-        padding: 20px;
-        font-size: 32px;
+        width: 500px;
+        height: 100px;
+        padding: 10px;
+        font-size: 64px;
     }
 
     .Div1, .Div2, .Div3, .Div4, .Div5 {
