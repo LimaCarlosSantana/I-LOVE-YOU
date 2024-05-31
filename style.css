@@ -60,9 +60,9 @@ select {
 /* Media query para telas maiores (largura mínima de 1024px) */
 @media (min-width: 768px) {
     select {
-        
-        bottom:20px
-        left: 5px;
+        width: 200px;
+        margin-top: 20px;
+        order: 1; /* Move o select para ficar abaixo das divs */
     }
 }
 
