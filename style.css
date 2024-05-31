@@ -53,10 +53,10 @@ select {
 @media (max-width: 720px) {
     
     select{
-        width: 600px;
-        height: 160px;
-        padding: 20px;
-        font-size: 64px;
+        width: 1200px;
+        height: 320px;
+        padding: 40px;
+        font-size: 128px;
     }
 
     .Div1, .Div2, .Div3, .Div4, .Div5 {
