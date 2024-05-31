@@ -32,8 +32,6 @@ select {
     width: 150px;
     height: 40px;
     padding: 10px 10px;
-    top: 50%;
-    left:75%;
     font-size: 16px;
     color: rgb(0, 0, 0);
     background-color: white;
@@ -50,3 +48,29 @@ select {
     background-position-x: calc(100% - 25px); /* Posiciona a seta a 25px da margem direita */
 }
 
+/* Media query para dispositivos móveis (largura máxima de 600px) */
+@media (max-width: 600px) {
+    select {
+        top: 500px; 
+        left: 75px;
+            
+    }
+}
+
+/* Media query para telas maiores (largura mínima de 1024px) */
+@media (min-width: 768px) {
+    select {
+        width: 200px;
+        top: 200px;
+        left: 370px;
+    }
+}
+
+/* Media query para telas maiores (largura mínima de 1024px) */
+@media (min-width: 1024px) {
+    select {
+        width: 200px;
+        top: 600px; 
+        left: 670px;
+    }
+}
