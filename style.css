@@ -31,29 +31,28 @@ body {
 select {
     width: 150px;
     height: 40px;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: black;
     background-color: white;
     border: none;
     border-radius: 5px;
     appearance: none;
     -webkit-appearance: none;
-    position: fixed;
-    background-image: url('imagens/seta-para-baixo-para-navegar.png'); /* Substitua 'seta-para-baixo.png' pelo caminho da sua imagem de seta */
+    background-image: url('imagens/seta-para-baixo-para-navegar.png');
     background-repeat: no-repeat;
-    background-position-y: center; /* Posiciona a seta verticalmente no centro */
-    padding-right: 25px; /* Adiciona espaço para a seta */
-    background-size: 15px; /* Define o tamanho da seta */
-    background-position-x: calc(100% - 25px); /* Posiciona a seta a 25px da margem direita */
+    background-position: center right 10px;
+    background-size: 15px;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Media query para dispositivos móveis (largura máxima de 600px) */
 @media (max-width: 600px) {
     select {
-        top: 500px; 
-        left: 75px;
-            
+        width: 80%;           
     }
 }
 
@@ -61,8 +60,6 @@ select {
 @media (min-width: 768px) {
     select {
         width: 200px;
-        margin-top: 20px;
-        order: 1; /* Move o select para ficar abaixo das divs */
     }
 }
 
@@ -70,7 +67,5 @@ select {
 @media (min-width: 1024px) {
     select {
         width: 200px;
-        top: 600px; 
-        left: 670px;
     }
 }
