@@ -22,8 +22,14 @@ body {
     width: 100%;
 }
 
-.Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
+.Div1 img, .Div2 img, .Div3 img, .Div4 img {
     width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Div5 img {
+    width: 100vw;
     height: auto;
     display: block;
 }
