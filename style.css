@@ -4,7 +4,6 @@
     height: 300px; /* Defina uma altura padrão para todas as divs */
     position: relative; /* Necessário para posicionamento interno */
     margin: 10px; /* Espaçamento entre as divs */
-   
 }
 
 body {
@@ -16,6 +15,7 @@ body {
     margin: 0;
     position: relative; /* Torna as posições relativas ao corpo */
     flex-wrap: wrap; /* Permite que as divs se alinhem em múltiplas linhas, se necessário */
+    flex-direction: column;
 }
 
 .Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
@@ -39,30 +39,44 @@ select {
     border-radius: 5px;
     appearance: none;
     -webkit-appearance: none;
-    position: fixed;
     background-image: url('imagens/seta-para-baixo-para-navegar.png'); /* Substitua 'seta-para-baixo.png' pelo caminho da sua imagem de seta */
     background-repeat: no-repeat;
     background-position-y: center; /* Posiciona a seta verticalmente no centro */
     padding-right: 25px; /* Adiciona espaço para a seta */
     background-size: 15px; /* Define o tamanho da seta */
     background-position-x: calc(100% - 25px); /* Posiciona a seta a 25px da margem direita */
+    margin-top: 20px; /* Espaço entre as imagens e o select */
 }
 
 /* Media query para dispositivos móveis (largura máxima de 600px) */
 @media (max-width: 600px) {
     select {
-        top: 500px; 
-        left: 75px;
-            
+        width: 100%; /* Aumenta a largura do select para 100% da largura disponível */
+        height: 50px;
+        font-size: 20px;
+        background-size: 20px; /* Aumenta o tamanho da seta */
+        background-position-x: calc(100% - 20px); /* Ajusta o posicionamento da seta */
+    }
+
+    .Div1, .Div2, .Div3, .Div4, .Div5 {
+        width: 90%; /* Ajusta a largura das divs */
+        height: auto; /* Ajusta a altura das divs */
     }
 }
 
-/* Media query para telas maiores (largura mínima de 1024px) */
-@media (min-width: 768px) {
+/* Media query para tablets (largura mínima de 768px e máxima de 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
     select {
-        
-        
-        left: 370px;
+        width: 80%; /* Aumenta a largura do select para 80% da largura disponível */
+        height: 50px;
+        font-size: 24px;
+        background-size: 25px; /* Aumenta o tamanho da seta */
+        background-position-x: calc(100% - 25px); /* Ajusta o posicionamento da seta */
+    }
+
+    .Div1, .Div2, .Div3, .Div4, .Div5 {
+        width: 80%; /* Ajusta a largura das divs */
+        height: auto; /* Ajusta a altura das divs */
     }
 }
 
@@ -70,7 +84,14 @@ select {
 @media (min-width: 1024px) {
     select {
         width: 200px;
-        top: 600px; 
-        left: 670px;
+        height: 40px;
+        font-size: 16px;
+        background-size: 15px;
+        background-position-x: calc(100% - 25px);
+    }
+
+    .Div1, .Div2, .Div3, .Div4, .Div5 {
+        width: 30%; /* Ajusta a largura das divs */
+        height: auto; /* Ajusta a altura das divs */
     }
 }
