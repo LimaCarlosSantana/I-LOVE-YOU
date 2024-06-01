@@ -42,9 +42,7 @@ select {
     background-size: 10px;
     background-position: center right 20px;
     /* Removendo posições absolutas ou relativas */
-    width: 150px;
-    height: 40px;
-    font-size: 16px;
+    
 }
 
 /* Media query para dispositivos móveis (largura máxima de 720px) */
