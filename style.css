@@ -22,7 +22,7 @@ body {
     width: 100%;
 }
 
-.Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 {
+.Div1 img, .Div2 img, .Div3 img, .Div4 img {
     width: 100%;
     height: auto;
     display: block;
@@ -56,6 +56,16 @@ select {
         right: 20px;
     }
 
+    .Div5 {
+        width: 100vw;
+        height: auto;
+        display: block;
+    }
+
+    .Div5 img {
+        width: 100%;
+    }
+
     .Div1, .Div2, .Div3, .Div4, .Div5 {
         display: none;
     }
@@ -77,6 +87,16 @@ select {
         transform: translateX(-50%);
     }
 
+    .Div5 {
+        width: 100vw;
+        height: auto;
+        display: block;
+    }
+
+    .Div5 img {
+        width: 100%;
+    }
+
     .Div1, .Div2, .Div3, .Div4, .Div5 {
         display: none;
     }
@@ -96,6 +116,12 @@ select {
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .Div5 {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .Div1, .Div2, .Div3, .Div4, .Div5 {
