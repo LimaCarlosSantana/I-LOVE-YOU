@@ -1,32 +1,33 @@
-.Div1, .Div2, .Div3, .Div4, .Div5 {
-    display: none;
-    width: 300px; /* Defina uma largura padrão para todas as divs */
-    height: 300px; /* Defina uma altura padrão para todas as divs */
-    position: relative; /* Necessário para posicionamento interno */
-    margin: 10px; /* Espaçamento entre as divs */
-   
-}
+
 
 body {
     background-color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    position: relative; /* Torna as posições relativas ao corpo */
-    flex-wrap: wrap; /* Permite que as divs se alinhem em múltiplas linhas, se necessário */
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.DivPai {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
 .Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
-    width: 90vh; /* Faz com que as imagens preencham a largura da div */
-    height: 90vh; /* Mantém a proporção da imagem */
+    width: 100%;
+    height: auto;
     display: block;
-    position: absolute;
-    top: 50%; /* Centraliza verticalmente */
-    left: 50%; /* Centraliza horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta a posição para a centralização */
 }
-
 
 
