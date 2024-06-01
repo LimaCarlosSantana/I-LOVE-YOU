@@ -19,7 +19,7 @@ body {
 }
 
 .Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
-    width: 1000px; /* Faz com que as imagens preencham a largura da div */
+    width: 90vh; /* Faz com que as imagens preencham a largura da div */
     height: auto; /* Mantém a proporção da imagem */
     display: block;
     position: absolute;
@@ -28,47 +28,5 @@ body {
     transform: translate(-50%, -50%); /* Ajusta a posição para a centralização */
 }
 
-select {
-    
-    
-    padding: 10px 10px;
-    
-    color: rgb(0, 0, 0);
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    appearance: none;
-    -webkit-appearance: none;
-    position: fixed;
-    background-image: url('imagens/seta-para-baixo-para-navegar.png'); /* Substitua 'seta-para-baixo.png' pelo caminho da sua imagem de seta */
-    background-repeat: no-repeat;
-    background-position-y: center; /* Posiciona a seta verticalmente no centro */
-    padding-right: 25px; /* Adiciona espaço para a seta */
-    background-size: 15px; /* Define o tamanho da seta */
-    background-position-x: calc(100% - 25px); /* Posiciona a seta a 25px da margem direita */
-}
 
-/* Media query para dispositivos móveis (largura máxima de 600px) */
-@media (max-width: 600px) {
-    select {
-        width: 400px;
-        height: 90px;
-        top: 1600px;
-        position: fixed; 
-        left: 300px;
-        font-size: 60px;
-    }
-}
-
-/* Media query para telas maiores (largura mínima de 1024px) */
-@media (min-width: 768px) {
-    select {
-        width: 400px;
-        height: 90px;
-        top: 1600px;
-        position: fixed; 
-        left: 300px;
-        font-size: 60px;
-    }
-}
 
