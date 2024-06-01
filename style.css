@@ -20,7 +20,7 @@ body {
 
 .Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
     width: 90vh; /* Faz com que as imagens preencham a largura da div */
-    height: auto; /* Mantém a proporção da imagem */
+    height: 90vh; /* Mantém a proporção da imagem */
     display: block;
     position: absolute;
     top: 50%; /* Centraliza verticalmente */
