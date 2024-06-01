@@ -1,109 +1,76 @@
+.Div1, .Div2, .Div3, .Div4, .Div5 {
+    display: none;
+    width: 300px; /* Defina uma largura padrão para todas as divs */
+    height: 300px; /* Defina uma altura padrão para todas as divs */
+    position: relative; /* Necessário para posicionamento interno */
+    margin: 10px; /* Espaçamento entre as divs */
+   
+}
+
 body {
     background-color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.DivPai {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    position: relative; /* Torna as posições relativas ao corpo */
+    flex-wrap: wrap; /* Permite que as divs se alinhem em múltiplas linhas, se necessário */
 }
 
 .Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Faz com que as imagens preencham a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
     display: block;
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para a centralização */
 }
 
 select {
-    margin: 20px 20px;
-    padding: 10px;
-    color: black;
+    width: 150px;
+    height: 40px;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
     background-color: white;
     border: none;
     border-radius: 5px;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url('imagens/seta-para-baixo-para-navegar.png');
+    position: fixed;
+    background-image: url('imagens/seta-para-baixo-para-navegar.png'); /* Substitua 'seta-para-baixo.png' pelo caminho da sua imagem de seta */
     background-repeat: no-repeat;
-    
-    background-position: center right 20px;
-    /* Removendo posições absolutas ou relativas */
-    
+    background-position-y: center; /* Posiciona a seta verticalmente no centro */
+    padding-right: 25px; /* Adiciona espaço para a seta */
+    background-size: 15px; /* Define o tamanho da seta */
+    background-position-x: calc(100% - 25px); /* Posiciona a seta a 25px da margem direita */
 }
 
-/* Media query para dispositivos móveis (largura máxima de 720px) */
-@media (max-width: 720px) {
-    select{
-        width: 600px;
-        height: 110px;
-        font-size: 60px;
-        background-size: 20px;
-        background-position: center right 60px;
-        position: fixed;
-        bottom: 400px;
-        right: 150px;
-        background-size: 40px;
-    }
-
-    .Div1, .Div2, .Div3, .Div4, .Div5 {
-        display: none;
-        width: 90%;
-        margin: 10px;
-    }
-}
-
-/* Media query para tablets e telas maiores (largura mínima de 768px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+/* Media query para dispositivos móveis (largura máxima de 600px) */
+@media (max-width: 600px) {
     select {
-        width: 600px;
-        height: 110px;
-        font-size: 60px;
-        background-size: 20px;
-        background-position: center right 60px;
-        position: fixed;
-        bottom: 400px;
-        right: 150px;
-        background-size: 40px;
+        top: 500px; 
+        left: 75px;
+            
     }
+}
 
-    .Div1, .Div2, .Div3, .Div4, .Div5 {
-        display: none;
-        width: 90%;
-        margin: 10px;
+/* Media query para telas maiores (largura mínima de 1024px) */
+@media (min-width: 768px) {
+    select {
+        
+        
+        left: 370px;
     }
 }
 
 /* Media query para telas maiores (largura mínima de 1024px) */
 @media (min-width: 1024px) {
     select {
-        width: 300px;
-        height: 50px;
-        font-size: 24px;
-        background-size: 20px;
-        background-position: center right 10px;
-        position: fixed;
-        bottom: 50px;
-        left: 620px;
-        background-size: 10px;
-    }
-
-    .Div1, .Div2, .Div3, .Div4, .Div5 {
-        display: none;
-        width: 30%;
-        margin: 10px;
+        width: 200px;
+        top: 600px; 
+        left: 670px;
     }
 }
