@@ -30,7 +30,7 @@ body {
 
 .Div5 img {
     
-    height: 1000px;
+    height: 100%;
     display: block;
 }
 
@@ -92,9 +92,10 @@ select {
 
     .Div5 {
         display: none;  /* Mostrar apenas a Div5 em tablets */
-        width: 100%;
+        width: 1000px;
+        height: 1000px;
         margin: 10px;
-        width: 100vw;  /* 100% da largura da viewport */
+         /* 100% da largura da viewport */
     }
 }
 
