@@ -29,9 +29,7 @@ body {
 }
 
 .Div5 img {
-    width: 100vw;  /* 100% da largura da viewport */
-    height: auto;
-    display: block;
+    
 }
 
 select {
@@ -93,6 +91,9 @@ select {
         display: block;  /* Mostrar apenas a Div5 em tablets */
         width: 100%;
         margin: 10px;
+        width: 100vw;  /* 100% da largura da viewport */
+        height: auto;
+        display: block;
     }
 }
 
@@ -118,7 +119,7 @@ select {
 
     .Div5 {
         display: block;  /* Mostrar apenas a Div5 em telas maiores */
-        width: 100%;
+        width: 30%;
         margin: 10px;
     }
 }
