@@ -19,7 +19,7 @@ body {
 }
 
 .Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 img {
-    width: 100%; /* Faz com que as imagens preencham a largura da div */
+    width: 1000px; /* Faz com que as imagens preencham a largura da div */
     height: auto; /* Mantém a proporção da imagem */
     display: block;
     position: absolute;
@@ -29,10 +29,10 @@ body {
 }
 
 select {
-    width: 150px;
-    height: 40px;
+    
+    
     padding: 10px 10px;
-    font-size: 16px;
+    
     color: rgb(0, 0, 0);
     background-color: white;
     border: none;
@@ -51,8 +51,8 @@ select {
 /* Media query para dispositivos móveis (largura máxima de 600px) */
 @media (max-width: 600px) {
     select {
-        top: 500px; 
-        left: 75px;
+        top: 100px; 
+        left: 30px;
         position: fixed; 
        
     }
@@ -61,19 +61,12 @@ select {
 /* Media query para telas maiores (largura mínima de 1024px) */
 @media (min-width: 768px) {
     select {
-        width: 200px;
-        top: 600px;
+        width: 400px;
+        height: 90px;
+        top: 1600px;
         position: fixed; 
-        left: 670px;
+        left: 300px;
+        font-size: 60px;
     }
 }
 
-/* Media query para telas maiores (largura mínima de 1024px) */
-@media (min-width: 1024px) {
-    select {
-        width: 200px;
-        top: 600px;
-        position: fixed; 
-        left: 670px;
-    }
-}
