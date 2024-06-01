@@ -29,7 +29,7 @@ body {
 }
 
 .Div5 img {
-    width: 100vw;  /* 100% da largura da viewport */
+    
     height: auto;
     display: block;
 }
@@ -68,6 +68,7 @@ select {
         display: none;  /* Mostrar apenas a Div5 em dispositivos móveis */
         width: 100%;
         margin: 10px;
+        width: 100vw;  /* 100% da largura da viewport */
     }
 }
 
@@ -93,6 +94,7 @@ select {
         display: none;  /* Mostrar apenas a Div5 em tablets */
         width: 100%;
         margin: 10px;
+        width: 100vw;  /* 100% da largura da viewport */
     }
 }
 
@@ -110,15 +112,11 @@ select {
         transform: translateX(-50%);
     }
 
-    .Div1, .Div2, .Div3, .Div4 {
+    .Div1, .Div2, .Div3, .Div4, .Div5 {
         display: none;
         width: 30%;
         margin: 10px;
     }
 
-    .Div5 {
-        display: none;  /* Mostrar apenas a Div5 em telas maiores */
-        width: 100%;
-        margin: 10px;
-    }
+    
 }
