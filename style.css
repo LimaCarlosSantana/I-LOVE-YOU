@@ -51,10 +51,12 @@ select {
 /* Media query para dispositivos móveis (largura máxima de 600px) */
 @media (max-width: 600px) {
     select {
-        top: 100px; 
-        left: 30px;
+        width: 400px;
+        height: 90px;
+        top: 1600px;
         position: fixed; 
-       
+        left: 300px;
+        font-size: 60px;
     }
 }
 
