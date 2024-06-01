@@ -22,17 +22,13 @@ body {
     width: 100%;
 }
 
-.Div1 img, .Div2 img, .Div3 img, .Div4 img {
+.Div1 img, .Div2 img, .Div3 img, .Div4 img, .Div5 {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.Div5 img {
-    
-    height: 100vw;
-    display: block;
-}
+
 
 select {
     margin: 20px 20px;
@@ -64,12 +60,7 @@ select {
         display: none;
     }
 
-    .Div5 {
-        display: none;  /* Mostrar apenas a Div5 em dispositivos móveis */
-        width: 100%;
-        margin: 10px;
-        width: 100vw;  /* 100% da largura da viewport */
-    }
+    
 }
 
 /* Media query para tablets e telas maiores (largura mínima de 768px) */
@@ -90,11 +81,7 @@ select {
         display: none;
     }
 
-    .Div5 {
-        display: none;  /* Mostrar apenas a Div5 em tablets */
-        margin: 10px;
-        width: 100vw;  /* 100% da largura da viewport */
-    }
+    
 }
 
 /* Media query para telas maiores (largura mínima de 1024px) */
